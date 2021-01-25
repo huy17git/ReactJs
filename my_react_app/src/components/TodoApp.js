@@ -37,10 +37,18 @@ class TodoApp extends React.Component{
       todos: this.state.todos.filter(todo => todo.id !== id)
     })
   }
-
-  addTodo = (title) => {
-    console.log(title)
+  addTodo = title => {
+    const newTodo = {
+      id:4,
+      title: title,
+      completed : false,
+    }
+    this.setState({
+      todos: [...this.state.todos, newTodo]
+    })
   }
+    
+
 
   render(){
     return (

@@ -10,10 +10,13 @@ class AddTodo extends React.Component {
       title : e.target.value
     });
   }
-  addTodo = (e) => {
-    e.preventDeafault();
-    this.props.addTodo(this.state.title)
-  }
+  addTodo = e => {
+    e.preventDefault();
+    this.props.addTodo(this.state.title);
+    this.setState({
+      title : ""
+    });
+  };
 
   render(){
     return (

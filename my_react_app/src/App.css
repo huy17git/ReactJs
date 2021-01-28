@@ -32,6 +32,13 @@
   .todo-item input {
     margin-right: 15px;
     }
+  .todo-item span {
+    overflow: hidden;
+    width: 80%;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
   .completed {
     font-style: italic;
     color: #c5e2d2;
